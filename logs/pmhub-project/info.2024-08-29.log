@@ -1,0 +1,313 @@
+10:43:28.615 [main] INFO  c.a.n.c.e.SearchableProperties - [sortPropertySourceDefaultOrder,197] - properties search order:PROPERTIES->JVM->ENV->DEFAULT_SETTING
+10:43:28.665 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.5.Final
+10:43:28.946 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+10:43:28.946 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+10:43:31.915 [main] INFO  c.l.p.p.PmHubProjectApplication - [logStartupProfileInfo,638] - The following 1 profile is active: "dev"
+10:43:33.463 [main] INFO  i.s.s.b.a.SeataAutoConfiguration - [globalTransactionScanner,63] - Automatically configure Seata
+10:43:33.533 [main] INFO  i.s.c.ConfigurationFactory - [load,69] - load Configuration from :Spring Configuration
+10:43:33.538 [main] INFO  i.s.c.ConfigurationFactory - [buildConfiguration,121] - load Configuration from :Spring Configuration
+10:43:33.769 [main] INFO  i.s.s.a.GlobalTransactionScanner - [initClient,208] - Initializing Global Transaction Clients ... 
+10:43:33.830 [main] INFO  i.s.c.r.n.NettyClientBootstrap - [start,147] - NettyClientBootstrap has started
+10:43:33.856 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+10:43:33.857 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+10:43:34.079 [main] INFO  i.s.c.r.n.NettyClientChannelManager - [acquireChannel,108] - will connect to 192.168.46.1:8091
+10:43:34.492 [main] INFO  i.s.c.r.n.NettyPoolableFactory - [makeObject,56] - NettyPool create channel to transactionRole:TMROLE,address:192.168.46.1:8091,msg:< RegisterTMRequest{applicationId='pmhub-project', transactionServiceGroup='default_tx_group'} >
+10:43:35.087 [main] INFO  i.s.c.r.n.TmNettyRemotingClient - [onRegisterMsgSuccess,224] - register TM success. client version:1.6.1, server version:2.0.0,channel:[id: 0x3445a5dd, L:/192.168.46.1:54247 - R:/192.168.46.1:8091]
+10:43:35.093 [main] INFO  i.s.c.r.n.NettyPoolableFactory - [makeObject,81] - register success, cost 100 ms, version:2.0.0,role:TMROLE,channel:[id: 0x3445a5dd, L:/192.168.46.1:54247 - R:/192.168.46.1:8091]
+10:43:35.094 [main] INFO  i.s.s.a.GlobalTransactionScanner - [initClient,222] - Transaction Manager Client is initialized. applicationId[pmhub-project] txServiceGroup[default_tx_group]
+10:43:35.107 [main] INFO  i.s.r.d.AsyncWorker - [<init>,73] - Async Commit Buffer Limit: 10000
+10:43:35.108 [main] INFO  i.s.r.d.x.ResourceManagerXA - [init,59] - ResourceManagerXA init ...
+10:43:35.116 [main] INFO  i.s.c.r.n.NettyClientBootstrap - [start,147] - NettyClientBootstrap has started
+10:43:35.116 [main] INFO  i.s.s.a.GlobalTransactionScanner - [initClient,227] - Resource Manager is initialized. applicationId[pmhub-project] txServiceGroup[default_tx_group]
+10:43:35.116 [main] INFO  i.s.s.a.GlobalTransactionScanner - [initClient,231] - Global Transaction Clients are initialized. 
+10:43:35.773 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-6806"]
+10:43:35.774 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+10:43:35.774 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.83]
+10:43:35.970 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+10:43:37.033 [main] INFO  c.a.d.p.DruidDataSource - [init,1009] - {dataSource-1} inited
+10:43:37.093 [main] INFO  i.s.c.r.n.NettyClientChannelManager - [acquireChannel,108] - will connect to 192.168.46.1:8091
+10:43:37.093 [main] INFO  i.s.c.r.n.RmNettyRemotingClient - [lambda$getPoolKeyFunction$0,276] - RM will register :jdbc:mysql://127.0.0.1:3306/pmhub-project
+10:43:37.094 [main] INFO  i.s.c.r.n.NettyPoolableFactory - [makeObject,56] - NettyPool create channel to transactionRole:RMROLE,address:192.168.46.1:8091,msg:< RegisterRMRequest{resourceIds='jdbc:mysql://127.0.0.1:3306/pmhub-project', applicationId='pmhub-project', transactionServiceGroup='default_tx_group'} >
+10:43:37.112 [main] INFO  i.s.c.r.n.RmNettyRemotingClient - [onRegisterMsgSuccess,177] - register RM success. client version:1.6.1, server version:2.0.0,channel:[id: 0x3526ad18, L:/192.168.46.1:54256 - R:/192.168.46.1:8091]
+10:43:37.112 [main] INFO  i.s.c.r.n.NettyPoolableFactory - [makeObject,81] - register success, cost 15 ms, version:2.0.0,role:RMROLE,channel:[id: 0x3526ad18, L:/192.168.46.1:54256 - R:/192.168.46.1:8091]
+10:43:37.155 [main] INFO  i.s.c.r.n.RmNettyRemotingClient - [registerResource,221] - will register resourceId:jdbc:mysql://127.0.0.1:3306/pmhub-project
+10:43:37.159 [NettyClientSelector_RMROLE_1_1] INFO  i.s.r.AbstractRMHandler - [onResponse,155] - the rm client received response msg [version=2.0.0,extraData=null,identified=true,resultCode=null,msg=null] from tc server.
+10:43:39.634 [main] INFO  c.a.c.s.f.SeataFeignBuilderBeanPostProcessor - [postProcessAfterInitialization,39] - change the retryer of the bean 'feignSentinelBuilder' to 'Retryer.NEVER_RETRY'
+10:43:39.858 [main] INFO  c.a.c.s.f.SeataFeignBuilderBeanPostProcessor - [postProcessAfterInitialization,39] - change the retryer of the bean 'feignSentinelBuilder' to 'Retryer.NEVER_RETRY'
+10:43:40.016 [main] INFO  i.s.s.a.GlobalTransactionScanner - [wrapIfNecessary,305] - Bean[com.laigeoffer.pmhub.project.service.impl.ProjectTaskServiceImpl$$EnhancerBySpringCGLIB$$6b595e64] with name [projectTaskServiceImpl] would use interceptor [io.seata.spring.annotation.GlobalTransactionalInterceptor]
+10:43:40.036 [main] INFO  c.a.c.s.f.SeataFeignBuilderBeanPostProcessor - [postProcessAfterInitialization,39] - change the retryer of the bean 'feignSentinelBuilder' to 'Retryer.NEVER_RETRY'
+10:43:40.370 [main] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.16.2
+10:43:40.520 [redisson-netty-2-14] INFO  o.r.c.p.MasterPubSubConnectionPool - [lambda$run$0,166] - 1 connections initialized for localhost/127.0.0.1:6379
+10:43:40.549 [redisson-netty-2-20] INFO  o.r.c.p.MasterConnectionPool - [lambda$run$0,166] - 24 connections initialized for localhost/127.0.0.1:6379
+10:43:41.191 [main] INFO  c.a.c.s.SentinelWebMvcConfigurer - [addInterceptors,52] - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+10:43:44.647 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-6806"]
+10:43:44.661 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+10:43:44.661 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+10:43:44.845 [main] INFO  c.a.c.n.r.NacosServiceRegistry - [register,76] - nacos registry, DEFAULT_GROUP pmhub-project 192.168.46.1:6806 register finished
+10:43:45.727 [main] INFO  c.l.p.p.PmHubProjectApplication - [logStarted,61] - Started PmHubProjectApplication in 18.137 seconds (JVM running for 19.656)
+10:43:45.734 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=pmhub-project.yml, group=DEFAULT_GROUP
+10:43:45.735 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=pmhub-project-dev.yml, group=DEFAULT_GROUP
+10:43:45.736 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=pmhub-project, group=DEFAULT_GROUP
+10:43:46.243 [RMI TCP Connection(8)-192.168.46.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+12:25:39.641 [NettyClientSelector_RMROLE_1_1] INFO  i.s.c.r.n.NettyClientChannelManager - [releaseChannel,133] - return to pool, rm channel:[id: 0x3526ad18, L:/192.168.46.1:54256 - R:/192.168.46.1:8091]
+12:25:39.641 [NettyClientSelector_TMROLE_1_1] INFO  i.s.c.r.n.NettyClientChannelManager - [releaseChannel,133] - return to pool, rm channel:[id: 0x3445a5dd, L:/192.168.46.1:54247 - R:/192.168.46.1:8091]
+12:25:39.641 [NettyClientSelector_RMROLE_1_1] INFO  i.s.c.r.n.AbstractNettyRemotingClient - [exceptionCaught,480] - remove exception rm channel:[id: 0x3526ad18, L:/192.168.46.1:54256 - R:/192.168.46.1:8091]
+12:25:39.641 [NettyClientSelector_TMROLE_1_1] INFO  i.s.c.r.n.AbstractNettyRemotingClient - [exceptionCaught,480] - remove exception rm channel:[id: 0x3445a5dd, L:/192.168.46.1:54247 - R:/192.168.46.1:8091]
+12:25:39.644 [NettyClientSelector_RMROLE_1_1] INFO  i.s.c.r.n.AbstractNettyRemotingClient - [channelInactive,438] - channel inactive: [id: 0x3526ad18, L:/192.168.46.1:54256 ! R:/192.168.46.1:8091]
+12:25:39.644 [NettyClientSelector_TMROLE_1_1] INFO  i.s.c.r.n.AbstractNettyRemotingClient - [channelInactive,438] - channel inactive: [id: 0x3445a5dd, L:/192.168.46.1:54247 ! R:/192.168.46.1:8091]
+12:25:39.644 [NettyClientSelector_RMROLE_1_1] INFO  i.s.c.r.n.NettyPoolableFactory - [validateObject,133] - channel valid false,channel:[id: 0x3526ad18, L:/192.168.46.1:54256 ! R:/192.168.46.1:8091]
+12:25:39.644 [NettyClientSelector_TMROLE_1_1] INFO  i.s.c.r.n.NettyPoolableFactory - [validateObject,133] - channel valid false,channel:[id: 0x3445a5dd, L:/192.168.46.1:54247 ! R:/192.168.46.1:8091]
+12:25:39.644 [NettyClientSelector_RMROLE_1_1] INFO  i.s.c.r.n.NettyPoolableFactory - [destroyObject,120] - will destroy channel:[id: 0x3526ad18, L:/192.168.46.1:54256 ! R:/192.168.46.1:8091]
+12:25:39.644 [NettyClientSelector_TMROLE_1_1] INFO  i.s.c.r.n.NettyPoolableFactory - [destroyObject,120] - will destroy channel:[id: 0x3445a5dd, L:/192.168.46.1:54247 ! R:/192.168.46.1:8091]
+12:25:39.644 [NettyClientSelector_RMROLE_1_1] INFO  i.s.c.r.n.AbstractNettyRemotingClient - [close,488] - ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x3526ad18, L:/192.168.46.1:54256 ! R:/192.168.46.1:8091]) will closed
+12:25:39.644 [NettyClientSelector_TMROLE_1_1] INFO  i.s.c.r.n.AbstractNettyRemotingClient - [close,488] - ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x3445a5dd, L:/192.168.46.1:54247 ! R:/192.168.46.1:8091]) will closed
+12:25:39.645 [NettyClientSelector_RMROLE_1_1] INFO  i.s.c.r.n.AbstractNettyRemotingClient - [close,488] - ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x3526ad18, L:/192.168.46.1:54256 ! R:/192.168.46.1:8091]) will closed
+12:25:39.645 [NettyClientSelector_TMROLE_1_1] INFO  i.s.c.r.n.AbstractNettyRemotingClient - [close,488] - ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x3445a5dd, L:/192.168.46.1:54247 ! R:/192.168.46.1:8091]) will closed
+12:25:43.827 [timeoutChecker_1_1] INFO  i.s.c.r.n.NettyClientChannelManager - [acquireChannel,108] - will connect to 192.168.46.1:8091
+12:25:43.828 [timeoutChecker_1_1] INFO  i.s.c.r.n.NettyPoolableFactory - [makeObject,56] - NettyPool create channel to transactionRole:TMROLE,address:192.168.46.1:8091,msg:< RegisterTMRequest{applicationId='pmhub-project', transactionServiceGroup='default_tx_group'} >
+12:25:45.129 [timeoutChecker_2_1] INFO  i.s.c.r.n.NettyClientChannelManager - [acquireChannel,108] - will connect to 192.168.46.1:8091
+12:25:45.129 [timeoutChecker_2_1] INFO  i.s.c.r.n.RmNettyRemotingClient - [lambda$getPoolKeyFunction$0,276] - RM will register :jdbc:mysql://127.0.0.1:3306/pmhub-project
+12:25:45.129 [timeoutChecker_2_1] INFO  i.s.c.r.n.NettyPoolableFactory - [validateObject,133] - channel valid false,channel:[id: 0x3526ad18, L:/192.168.46.1:54256 ! R:/192.168.46.1:8091]
+12:25:45.131 [timeoutChecker_2_1] INFO  i.s.c.r.n.NettyPoolableFactory - [destroyObject,120] - will destroy channel:[id: 0x3526ad18, L:/192.168.46.1:54256 ! R:/192.168.46.1:8091]
+12:25:45.132 [timeoutChecker_2_1] INFO  i.s.c.r.n.NettyPoolableFactory - [makeObject,56] - NettyPool create channel to transactionRole:RMROLE,address:192.168.46.1:8091,msg:< RegisterRMRequest{resourceIds='jdbc:mysql://127.0.0.1:3306/pmhub-project', applicationId='pmhub-project', transactionServiceGroup='default_tx_group'} >
+12:25:45.852 [NettyClientSelector_TMROLE_1_1] INFO  i.s.c.r.n.AbstractNettyRemotingClient - [close,488] - ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x981a9630]) will closed
+12:25:47.185 [NettyClientSelector_RMROLE_1_1] INFO  i.s.c.r.n.AbstractNettyRemotingClient - [close,488] - ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x08c8159d]) will closed
+13:21:21.390 [main] INFO  c.a.n.c.e.SearchableProperties - [sortPropertySourceDefaultOrder,197] - properties search order:PROPERTIES->JVM->ENV->DEFAULT_SETTING
+13:21:21.433 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.5.Final
+13:21:21.678 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+13:21:21.679 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+13:21:25.566 [main] INFO  c.l.p.p.PmHubProjectApplication - [logStartupProfileInfo,638] - The following 1 profile is active: "dev"
+13:21:27.101 [main] INFO  i.s.s.b.a.SeataAutoConfiguration - [globalTransactionScanner,63] - Automatically configure Seata
+13:21:27.165 [main] INFO  i.s.c.ConfigurationFactory - [load,69] - load Configuration from :Spring Configuration
+13:21:27.170 [main] INFO  i.s.c.ConfigurationFactory - [buildConfiguration,121] - load Configuration from :Spring Configuration
+13:21:27.402 [main] INFO  i.s.s.a.GlobalTransactionScanner - [initClient,208] - Initializing Global Transaction Clients ... 
+13:21:27.462 [main] INFO  i.s.c.r.n.NettyClientBootstrap - [start,147] - NettyClientBootstrap has started
+13:21:27.489 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+13:21:27.489 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+13:21:27.708 [main] INFO  i.s.c.r.n.NettyClientChannelManager - [acquireChannel,108] - will connect to 192.168.46.1:8091
+13:21:28.122 [main] INFO  i.s.c.r.n.NettyPoolableFactory - [makeObject,56] - NettyPool create channel to transactionRole:TMROLE,address:192.168.46.1:8091,msg:< RegisterTMRequest{applicationId='pmhub-project', transactionServiceGroup='default_tx_group'} >
+13:21:28.684 [main] INFO  i.s.c.r.n.TmNettyRemotingClient - [onRegisterMsgSuccess,224] - register TM success. client version:1.6.1, server version:2.0.0,channel:[id: 0xd30df884, L:/192.168.46.1:53101 - R:/192.168.46.1:8091]
+13:21:28.690 [main] INFO  i.s.c.r.n.NettyPoolableFactory - [makeObject,81] - register success, cost 88 ms, version:2.0.0,role:TMROLE,channel:[id: 0xd30df884, L:/192.168.46.1:53101 - R:/192.168.46.1:8091]
+13:21:28.690 [main] INFO  i.s.s.a.GlobalTransactionScanner - [initClient,222] - Transaction Manager Client is initialized. applicationId[pmhub-project] txServiceGroup[default_tx_group]
+13:21:28.704 [main] INFO  i.s.r.d.AsyncWorker - [<init>,73] - Async Commit Buffer Limit: 10000
+13:21:28.705 [main] INFO  i.s.r.d.x.ResourceManagerXA - [init,59] - ResourceManagerXA init ...
+13:21:28.716 [main] INFO  i.s.c.r.n.NettyClientBootstrap - [start,147] - NettyClientBootstrap has started
+13:21:28.716 [main] INFO  i.s.s.a.GlobalTransactionScanner - [initClient,227] - Resource Manager is initialized. applicationId[pmhub-project] txServiceGroup[default_tx_group]
+13:21:28.716 [main] INFO  i.s.s.a.GlobalTransactionScanner - [initClient,231] - Global Transaction Clients are initialized. 
+13:21:29.332 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-6806"]
+13:21:29.333 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+13:21:29.333 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.83]
+13:21:29.523 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+13:21:30.528 [main] INFO  c.a.d.p.DruidDataSource - [init,1009] - {dataSource-1} inited
+13:21:30.582 [main] INFO  i.s.c.r.n.NettyClientChannelManager - [acquireChannel,108] - will connect to 192.168.46.1:8091
+13:21:30.583 [main] INFO  i.s.c.r.n.RmNettyRemotingClient - [lambda$getPoolKeyFunction$0,276] - RM will register :jdbc:mysql://127.0.0.1:3306/pmhub-project
+13:21:30.584 [main] INFO  i.s.c.r.n.NettyPoolableFactory - [makeObject,56] - NettyPool create channel to transactionRole:RMROLE,address:192.168.46.1:8091,msg:< RegisterRMRequest{resourceIds='jdbc:mysql://127.0.0.1:3306/pmhub-project', applicationId='pmhub-project', transactionServiceGroup='default_tx_group'} >
+13:21:30.596 [main] INFO  i.s.c.r.n.RmNettyRemotingClient - [onRegisterMsgSuccess,177] - register RM success. client version:1.6.1, server version:2.0.0,channel:[id: 0x2ed86b3f, L:/192.168.46.1:53109 - R:/192.168.46.1:8091]
+13:21:30.596 [main] INFO  i.s.c.r.n.NettyPoolableFactory - [makeObject,81] - register success, cost 10 ms, version:2.0.0,role:RMROLE,channel:[id: 0x2ed86b3f, L:/192.168.46.1:53109 - R:/192.168.46.1:8091]
+13:21:30.632 [main] INFO  i.s.c.r.n.RmNettyRemotingClient - [registerResource,221] - will register resourceId:jdbc:mysql://127.0.0.1:3306/pmhub-project
+13:21:30.634 [NettyClientSelector_RMROLE_1_1] INFO  i.s.r.AbstractRMHandler - [onResponse,155] - the rm client received response msg [version=2.0.0,extraData=null,identified=true,resultCode=null,msg=null] from tc server.
+13:21:32.970 [main] INFO  c.a.c.s.f.SeataFeignBuilderBeanPostProcessor - [postProcessAfterInitialization,39] - change the retryer of the bean 'feignSentinelBuilder' to 'Retryer.NEVER_RETRY'
+13:21:33.205 [main] INFO  c.a.c.s.f.SeataFeignBuilderBeanPostProcessor - [postProcessAfterInitialization,39] - change the retryer of the bean 'feignSentinelBuilder' to 'Retryer.NEVER_RETRY'
+13:21:33.360 [main] INFO  i.s.s.a.GlobalTransactionScanner - [wrapIfNecessary,305] - Bean[com.laigeoffer.pmhub.project.service.impl.ProjectTaskServiceImpl$$EnhancerBySpringCGLIB$$20a6eb07] with name [projectTaskServiceImpl] would use interceptor [io.seata.spring.annotation.GlobalTransactionalInterceptor]
+13:21:33.379 [main] INFO  c.a.c.s.f.SeataFeignBuilderBeanPostProcessor - [postProcessAfterInitialization,39] - change the retryer of the bean 'feignSentinelBuilder' to 'Retryer.NEVER_RETRY'
+13:21:33.690 [main] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.16.2
+13:21:33.874 [redisson-netty-2-6] INFO  o.r.c.p.MasterPubSubConnectionPool - [lambda$run$0,166] - 1 connections initialized for localhost/127.0.0.1:6379
+13:21:33.886 [redisson-netty-2-20] INFO  o.r.c.p.MasterConnectionPool - [lambda$run$0,166] - 24 connections initialized for localhost/127.0.0.1:6379
+13:21:34.426 [rpcDispatch_RMROLE_1_1_24] INFO  i.s.c.r.p.c.RmUndoLogProcessor - [process,49] - rm handle undo log process:UndoLogDeleteRequest{resourceId='jdbc:mysql://127.0.0.1:3306/pmhub-project', saveDays=7, branchType=AT}
+13:21:34.518 [main] INFO  c.a.c.s.SentinelWebMvcConfigurer - [addInterceptors,52] - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+13:21:40.031 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-6806"]
+13:21:40.044 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+13:21:40.045 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+13:21:40.231 [main] INFO  c.a.c.n.r.NacosServiceRegistry - [register,76] - nacos registry, DEFAULT_GROUP pmhub-project 192.168.46.1:6806 register finished
+13:21:42.127 [main] INFO  c.l.p.p.PmHubProjectApplication - [logStarted,61] - Started PmHubProjectApplication in 22.715 seconds (JVM running for 24.12)
+13:21:42.135 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=pmhub-project.yml, group=DEFAULT_GROUP
+13:21:42.136 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=pmhub-project-dev.yml, group=DEFAULT_GROUP
+13:21:42.137 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=pmhub-project, group=DEFAULT_GROUP
+13:21:42.672 [RMI TCP Connection(8)-192.168.46.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+17:01:30.029 [http-nio-6806-exec-4] INFO  i.s.t.TransactionManagerHolder - [<clinit>,40] - TransactionManager Singleton io.seata.tm.DefaultTransactionManager@18744fa2
+17:01:30.093 [http-nio-6806-exec-4] INFO  i.s.t.a.DefaultGlobalTransaction - [begin,118] - Begin new global transaction [192.168.46.1:8091:4179899449711726593]
+17:01:30.094 [http-nio-6806-exec-4] INFO  c.l.p.p.s.i.ProjectTaskServiceImpl - [add,348] - ---------------开始新建任务: 	xid: 192.168.46.1:8091:4179899449711726593
+17:01:31.068 [http-nio-6806-exec-4] INFO  c.l.p.p.s.i.ProjectTaskServiceImpl - [add,388] - ---------------结束新建任务: 	xid: 192.168.46.1:8091:4179899449711726593
+17:01:31.082 [http-nio-6806-exec-4] INFO  i.s.t.a.DefaultGlobalTransaction - [suspend,199] - Suspending current transaction, xid = 192.168.46.1:8091:4179899449711726593
+17:01:31.083 [http-nio-6806-exec-4] INFO  i.s.t.a.DefaultGlobalTransaction - [commit,153] - [192.168.46.1:8091:4179899449711726593] commit status: Committed
+17:01:31.421 [rpcDispatch_RMROLE_1_2_24] INFO  i.s.c.r.p.c.RmBranchCommitProcessor - [process,56] - rm client handle branch commit process:xid=192.168.46.1:8091:4179899449711726593,branchId=4179899449711726594,branchType=AT,resourceId=jdbc:mysql://127.0.0.1:3306/pmhub-project,applicationData={"skipCheckLock":true}
+17:01:31.424 [rpcDispatch_RMROLE_1_2_24] INFO  i.s.r.AbstractRMHandler - [doBranchCommit,96] - Branch committing: 192.168.46.1:8091:4179899449711726593 4179899449711726594 jdbc:mysql://127.0.0.1:3306/pmhub-project {"skipCheckLock":true}
+17:01:31.426 [rpcDispatch_RMROLE_1_2_24] INFO  i.s.r.AbstractRMHandler - [doBranchCommit,104] - Branch commit result: PhaseTwo_Committed
+17:01:31.432 [rpcDispatch_RMROLE_1_3_24] INFO  i.s.c.r.p.c.RmBranchCommitProcessor - [process,56] - rm client handle branch commit process:xid=192.168.46.1:8091:4179899449711726593,branchId=4179899449711726595,branchType=AT,resourceId=jdbc:mysql://127.0.0.1:3306/pmhub-project,applicationData={"autoCommit":false,"skipCheckLock":true}
+17:01:31.433 [rpcDispatch_RMROLE_1_3_24] INFO  i.s.r.AbstractRMHandler - [doBranchCommit,96] - Branch committing: 192.168.46.1:8091:4179899449711726593 4179899449711726595 jdbc:mysql://127.0.0.1:3306/pmhub-project {"autoCommit":false,"skipCheckLock":true}
+17:01:31.433 [rpcDispatch_RMROLE_1_3_24] INFO  i.s.r.AbstractRMHandler - [doBranchCommit,104] - Branch commit result: PhaseTwo_Committed
+17:01:31.436 [rpcDispatch_RMROLE_1_4_24] INFO  i.s.c.r.p.c.RmBranchCommitProcessor - [process,56] - rm client handle branch commit process:xid=192.168.46.1:8091:4179899449711726593,branchId=4179899449711726596,branchType=AT,resourceId=jdbc:mysql://127.0.0.1:3306/pmhub-project,applicationData={"skipCheckLock":true}
+17:01:31.436 [rpcDispatch_RMROLE_1_4_24] INFO  i.s.r.AbstractRMHandler - [doBranchCommit,96] - Branch committing: 192.168.46.1:8091:4179899449711726593 4179899449711726596 jdbc:mysql://127.0.0.1:3306/pmhub-project {"skipCheckLock":true}
+17:01:31.436 [rpcDispatch_RMROLE_1_4_24] INFO  i.s.r.AbstractRMHandler - [doBranchCommit,104] - Branch commit result: PhaseTwo_Committed
+17:01:31.438 [rpcDispatch_RMROLE_1_5_24] INFO  i.s.c.r.p.c.RmBranchCommitProcessor - [process,56] - rm client handle branch commit process:xid=192.168.46.1:8091:4179899449711726593,branchId=4179899449711726597,branchType=AT,resourceId=jdbc:mysql://127.0.0.1:3306/pmhub-project,applicationData={"autoCommit":false,"skipCheckLock":true}
+17:01:31.438 [rpcDispatch_RMROLE_1_5_24] INFO  i.s.r.AbstractRMHandler - [doBranchCommit,96] - Branch committing: 192.168.46.1:8091:4179899449711726593 4179899449711726597 jdbc:mysql://127.0.0.1:3306/pmhub-project {"autoCommit":false,"skipCheckLock":true}
+17:01:31.439 [rpcDispatch_RMROLE_1_5_24] INFO  i.s.r.AbstractRMHandler - [doBranchCommit,104] - Branch commit result: PhaseTwo_Committed
+17:01:31.441 [rpcDispatch_RMROLE_1_6_24] INFO  i.s.c.r.p.c.RmBranchCommitProcessor - [process,56] - rm client handle branch commit process:xid=192.168.46.1:8091:4179899449711726593,branchId=4179899449711726598,branchType=AT,resourceId=jdbc:mysql://127.0.0.1:3306/pmhub-project,applicationData={"autoCommit":false,"skipCheckLock":true}
+17:01:31.442 [rpcDispatch_RMROLE_1_6_24] INFO  i.s.r.AbstractRMHandler - [doBranchCommit,96] - Branch committing: 192.168.46.1:8091:4179899449711726593 4179899449711726598 jdbc:mysql://127.0.0.1:3306/pmhub-project {"autoCommit":false,"skipCheckLock":true}
+17:01:31.442 [rpcDispatch_RMROLE_1_6_24] INFO  i.s.r.AbstractRMHandler - [doBranchCommit,104] - Branch commit result: PhaseTwo_Committed
+17:01:31.445 [rpcDispatch_RMROLE_1_7_24] INFO  i.s.c.r.p.c.RmBranchCommitProcessor - [process,56] - rm client handle branch commit process:xid=192.168.46.1:8091:4179899449711726593,branchId=4179899449711726599,branchType=AT,resourceId=jdbc:mysql://127.0.0.1:3306/pmhub-project,applicationData={"autoCommit":false,"skipCheckLock":true}
+17:01:31.445 [rpcDispatch_RMROLE_1_7_24] INFO  i.s.r.AbstractRMHandler - [doBranchCommit,96] - Branch committing: 192.168.46.1:8091:4179899449711726593 4179899449711726599 jdbc:mysql://127.0.0.1:3306/pmhub-project {"autoCommit":false,"skipCheckLock":true}
+17:01:31.445 [rpcDispatch_RMROLE_1_7_24] INFO  i.s.r.AbstractRMHandler - [doBranchCommit,104] - Branch commit result: PhaseTwo_Committed
+17:21:05.946 [http-nio-6806-exec-1] INFO  c.l.p.p.s.p.QueryMyProjectExecutor - [query,28] - 查询我的项目入参:{"keyword":"","pageNum":1,"pageSize":10,"type":"my"}
+17:22:46.698 [http-nio-6806-exec-2] INFO  c.l.p.p.s.p.QueryMyProjectExecutor - [query,28] - 查询我的项目入参:{"keyword":"","pageNum":1,"pageSize":10,"type":"my"}
+17:23:36.086 [http-nio-6806-exec-5] INFO  c.l.p.p.s.p.QueryMyProjectExecutor - [query,28] - 查询我的项目入参:{"keyword":"","pageNum":1,"pageSize":10,"type":"my"}
+17:54:07.408 [main] INFO  c.a.n.c.e.SearchableProperties - [sortPropertySourceDefaultOrder,197] - properties search order:PROPERTIES->JVM->ENV->DEFAULT_SETTING
+17:54:07.453 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.5.Final
+17:54:07.706 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+17:54:07.707 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+17:54:11.659 [main] INFO  c.l.p.p.PmHubProjectApplication - [logStartupProfileInfo,638] - The following 1 profile is active: "dev"
+17:54:13.199 [main] INFO  i.s.s.b.a.SeataAutoConfiguration - [globalTransactionScanner,63] - Automatically configure Seata
+17:54:13.256 [main] INFO  i.s.c.ConfigurationFactory - [load,69] - load Configuration from :Spring Configuration
+17:54:13.260 [main] INFO  i.s.c.ConfigurationFactory - [buildConfiguration,121] - load Configuration from :Spring Configuration
+17:54:13.438 [main] INFO  i.s.s.a.GlobalTransactionScanner - [initClient,208] - Initializing Global Transaction Clients ... 
+17:54:13.491 [main] INFO  i.s.c.r.n.NettyClientBootstrap - [start,147] - NettyClientBootstrap has started
+17:54:13.516 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+17:54:13.516 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+17:54:13.752 [main] INFO  i.s.c.r.n.NettyClientChannelManager - [acquireChannel,108] - will connect to 192.168.46.1:8091
+17:54:14.174 [main] INFO  i.s.c.r.n.NettyPoolableFactory - [makeObject,56] - NettyPool create channel to transactionRole:TMROLE,address:192.168.46.1:8091,msg:< RegisterTMRequest{applicationId='pmhub-project', transactionServiceGroup='default_tx_group'} >
+17:54:14.683 [main] INFO  i.s.c.r.n.TmNettyRemotingClient - [onRegisterMsgSuccess,224] - register TM success. client version:1.6.1, server version:2.0.0,channel:[id: 0x308c22d4, L:/192.168.46.1:63029 - R:/192.168.46.1:8091]
+17:54:14.689 [main] INFO  i.s.c.r.n.NettyPoolableFactory - [makeObject,81] - register success, cost 43 ms, version:2.0.0,role:TMROLE,channel:[id: 0x308c22d4, L:/192.168.46.1:63029 - R:/192.168.46.1:8091]
+17:54:14.690 [main] INFO  i.s.s.a.GlobalTransactionScanner - [initClient,222] - Transaction Manager Client is initialized. applicationId[pmhub-project] txServiceGroup[default_tx_group]
+17:54:14.698 [main] INFO  i.s.r.d.AsyncWorker - [<init>,73] - Async Commit Buffer Limit: 10000
+17:54:14.699 [main] INFO  i.s.r.d.x.ResourceManagerXA - [init,59] - ResourceManagerXA init ...
+17:54:14.706 [main] INFO  i.s.c.r.n.NettyClientBootstrap - [start,147] - NettyClientBootstrap has started
+17:54:14.706 [main] INFO  i.s.s.a.GlobalTransactionScanner - [initClient,227] - Resource Manager is initialized. applicationId[pmhub-project] txServiceGroup[default_tx_group]
+17:54:14.706 [main] INFO  i.s.s.a.GlobalTransactionScanner - [initClient,231] - Global Transaction Clients are initialized. 
+17:54:15.330 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-6806"]
+17:54:15.331 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+17:54:15.331 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.83]
+17:54:15.546 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+17:54:16.599 [main] INFO  c.a.d.p.DruidDataSource - [init,1009] - {dataSource-1} inited
+17:54:16.655 [main] INFO  i.s.c.r.n.NettyClientChannelManager - [acquireChannel,108] - will connect to 192.168.46.1:8091
+17:54:16.655 [main] INFO  i.s.c.r.n.RmNettyRemotingClient - [lambda$getPoolKeyFunction$0,276] - RM will register :jdbc:mysql://127.0.0.1:3306/pmhub-project
+17:54:16.656 [main] INFO  i.s.c.r.n.NettyPoolableFactory - [makeObject,56] - NettyPool create channel to transactionRole:RMROLE,address:192.168.46.1:8091,msg:< RegisterRMRequest{resourceIds='jdbc:mysql://127.0.0.1:3306/pmhub-project', applicationId='pmhub-project', transactionServiceGroup='default_tx_group'} >
+17:54:16.662 [main] INFO  i.s.c.r.n.RmNettyRemotingClient - [onRegisterMsgSuccess,177] - register RM success. client version:1.6.1, server version:2.0.0,channel:[id: 0xfbda92e5, L:/192.168.46.1:63038 - R:/192.168.46.1:8091]
+17:54:16.662 [main] INFO  i.s.c.r.n.NettyPoolableFactory - [makeObject,81] - register success, cost 4 ms, version:2.0.0,role:RMROLE,channel:[id: 0xfbda92e5, L:/192.168.46.1:63038 - R:/192.168.46.1:8091]
+17:54:16.698 [main] INFO  i.s.c.r.n.RmNettyRemotingClient - [registerResource,221] - will register resourceId:jdbc:mysql://127.0.0.1:3306/pmhub-project
+17:54:16.702 [NettyClientSelector_RMROLE_1_1] INFO  i.s.r.AbstractRMHandler - [onResponse,155] - the rm client received response msg [version=2.0.0,extraData=null,identified=true,resultCode=null,msg=null] from tc server.
+17:54:19.054 [main] INFO  c.a.c.s.f.SeataFeignBuilderBeanPostProcessor - [postProcessAfterInitialization,39] - change the retryer of the bean 'feignSentinelBuilder' to 'Retryer.NEVER_RETRY'
+17:54:19.266 [main] INFO  c.a.c.s.f.SeataFeignBuilderBeanPostProcessor - [postProcessAfterInitialization,39] - change the retryer of the bean 'feignSentinelBuilder' to 'Retryer.NEVER_RETRY'
+17:54:19.336 [main] INFO  c.a.c.s.f.SeataFeignBuilderBeanPostProcessor - [postProcessAfterInitialization,39] - change the retryer of the bean 'feignSentinelBuilder' to 'Retryer.NEVER_RETRY'
+17:54:19.656 [main] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.16.2
+17:54:19.793 [redisson-netty-2-24] INFO  o.r.c.p.MasterPubSubConnectionPool - [lambda$run$0,166] - 1 connections initialized for localhost/127.0.0.1:6379
+17:54:19.823 [redisson-netty-2-20] INFO  o.r.c.p.MasterConnectionPool - [lambda$run$0,166] - 24 connections initialized for localhost/127.0.0.1:6379
+17:54:20.441 [main] INFO  c.a.c.s.SentinelWebMvcConfigurer - [addInterceptors,52] - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+17:54:25.859 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-6806"]
+17:54:25.872 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+17:54:25.873 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+17:54:26.054 [main] INFO  c.a.c.n.r.NacosServiceRegistry - [register,76] - nacos registry, DEFAULT_GROUP pmhub-project 192.168.46.1:6806 register finished
+17:54:27.958 [main] INFO  c.l.p.p.PmHubProjectApplication - [logStarted,61] - Started PmHubProjectApplication in 22.568 seconds (JVM running for 24.057)
+17:54:27.966 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=pmhub-project.yml, group=DEFAULT_GROUP
+17:54:27.967 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=pmhub-project-dev.yml, group=DEFAULT_GROUP
+17:54:27.968 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=pmhub-project, group=DEFAULT_GROUP
+17:54:29.184 [RMI TCP Connection(5)-192.168.46.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+17:57:47.028 [http-nio-6806-exec-10] INFO  c.l.p.p.s.i.ProjectTaskServiceImpl - [add,348] - ---------------开始新建任务: 	xid: null
+18:01:10.025 [main] INFO  c.a.n.c.e.SearchableProperties - [sortPropertySourceDefaultOrder,197] - properties search order:PROPERTIES->JVM->ENV->DEFAULT_SETTING
+18:01:10.069 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.5.Final
+18:01:10.313 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+18:01:10.314 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+18:01:14.155 [main] INFO  c.l.p.p.PmHubProjectApplication - [logStartupProfileInfo,638] - The following 1 profile is active: "dev"
+18:01:15.671 [main] INFO  i.s.s.b.a.SeataAutoConfiguration - [globalTransactionScanner,63] - Automatically configure Seata
+18:01:15.727 [main] INFO  i.s.c.ConfigurationFactory - [load,69] - load Configuration from :Spring Configuration
+18:01:15.731 [main] INFO  i.s.c.ConfigurationFactory - [buildConfiguration,121] - load Configuration from :Spring Configuration
+18:01:15.910 [main] INFO  i.s.s.a.GlobalTransactionScanner - [initClient,208] - Initializing Global Transaction Clients ... 
+18:01:15.962 [main] INFO  i.s.c.r.n.NettyClientBootstrap - [start,147] - NettyClientBootstrap has started
+18:01:15.987 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+18:01:15.987 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+18:01:16.196 [main] INFO  i.s.c.r.n.NettyClientChannelManager - [acquireChannel,108] - will connect to 192.168.46.1:8091
+18:01:16.602 [main] INFO  i.s.c.r.n.NettyPoolableFactory - [makeObject,56] - NettyPool create channel to transactionRole:TMROLE,address:192.168.46.1:8091,msg:< RegisterTMRequest{applicationId='pmhub-project', transactionServiceGroup='default_tx_group'} >
+18:01:17.114 [main] INFO  i.s.c.r.n.TmNettyRemotingClient - [onRegisterMsgSuccess,224] - register TM success. client version:1.6.1, server version:2.0.0,channel:[id: 0xde1fa4e3, L:/192.168.46.1:63732 - R:/192.168.46.1:8091]
+18:01:17.119 [main] INFO  i.s.c.r.n.NettyPoolableFactory - [makeObject,81] - register success, cost 42 ms, version:2.0.0,role:TMROLE,channel:[id: 0xde1fa4e3, L:/192.168.46.1:63732 - R:/192.168.46.1:8091]
+18:01:17.120 [main] INFO  i.s.s.a.GlobalTransactionScanner - [initClient,222] - Transaction Manager Client is initialized. applicationId[pmhub-project] txServiceGroup[default_tx_group]
+18:01:17.131 [main] INFO  i.s.r.d.AsyncWorker - [<init>,73] - Async Commit Buffer Limit: 10000
+18:01:17.132 [main] INFO  i.s.r.d.x.ResourceManagerXA - [init,59] - ResourceManagerXA init ...
+18:01:17.138 [main] INFO  i.s.c.r.n.NettyClientBootstrap - [start,147] - NettyClientBootstrap has started
+18:01:17.138 [main] INFO  i.s.s.a.GlobalTransactionScanner - [initClient,227] - Resource Manager is initialized. applicationId[pmhub-project] txServiceGroup[default_tx_group]
+18:01:17.138 [main] INFO  i.s.s.a.GlobalTransactionScanner - [initClient,231] - Global Transaction Clients are initialized. 
+18:01:17.752 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-6806"]
+18:01:17.753 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+18:01:17.753 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.83]
+18:01:17.968 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+18:01:18.988 [main] INFO  c.a.d.p.DruidDataSource - [init,1009] - {dataSource-1} inited
+18:01:19.042 [main] INFO  i.s.c.r.n.NettyClientChannelManager - [acquireChannel,108] - will connect to 192.168.46.1:8091
+18:01:19.042 [main] INFO  i.s.c.r.n.RmNettyRemotingClient - [lambda$getPoolKeyFunction$0,276] - RM will register :jdbc:mysql://127.0.0.1:3306/pmhub-project
+18:01:19.043 [main] INFO  i.s.c.r.n.NettyPoolableFactory - [makeObject,56] - NettyPool create channel to transactionRole:RMROLE,address:192.168.46.1:8091,msg:< RegisterRMRequest{resourceIds='jdbc:mysql://127.0.0.1:3306/pmhub-project', applicationId='pmhub-project', transactionServiceGroup='default_tx_group'} >
+18:01:19.051 [main] INFO  i.s.c.r.n.RmNettyRemotingClient - [onRegisterMsgSuccess,177] - register RM success. client version:1.6.1, server version:2.0.0,channel:[id: 0xcdd4912d, L:/192.168.46.1:63745 - R:/192.168.46.1:8091]
+18:01:19.052 [main] INFO  i.s.c.r.n.NettyPoolableFactory - [makeObject,81] - register success, cost 7 ms, version:2.0.0,role:RMROLE,channel:[id: 0xcdd4912d, L:/192.168.46.1:63745 - R:/192.168.46.1:8091]
+18:01:19.088 [main] INFO  i.s.c.r.n.RmNettyRemotingClient - [registerResource,221] - will register resourceId:jdbc:mysql://127.0.0.1:3306/pmhub-project
+18:01:19.091 [NettyClientSelector_RMROLE_1_1] INFO  i.s.r.AbstractRMHandler - [onResponse,155] - the rm client received response msg [version=2.0.0,extraData=null,identified=true,resultCode=null,msg=null] from tc server.
+18:01:21.470 [main] INFO  c.a.c.s.f.SeataFeignBuilderBeanPostProcessor - [postProcessAfterInitialization,39] - change the retryer of the bean 'feignSentinelBuilder' to 'Retryer.NEVER_RETRY'
+18:01:21.708 [main] INFO  c.a.c.s.f.SeataFeignBuilderBeanPostProcessor - [postProcessAfterInitialization,39] - change the retryer of the bean 'feignSentinelBuilder' to 'Retryer.NEVER_RETRY'
+18:01:21.833 [main] INFO  i.s.s.a.GlobalTransactionScanner - [wrapIfNecessary,305] - Bean[com.laigeoffer.pmhub.project.service.impl.ProjectTaskServiceImpl$$EnhancerBySpringCGLIB$$166375c8] with name [projectTaskServiceImpl] would use interceptor [io.seata.spring.annotation.GlobalTransactionalInterceptor]
+18:01:21.852 [main] INFO  c.a.c.s.f.SeataFeignBuilderBeanPostProcessor - [postProcessAfterInitialization,39] - change the retryer of the bean 'feignSentinelBuilder' to 'Retryer.NEVER_RETRY'
+18:01:22.163 [main] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.16.2
+18:01:22.302 [redisson-netty-2-14] INFO  o.r.c.p.MasterPubSubConnectionPool - [lambda$run$0,166] - 1 connections initialized for localhost/127.0.0.1:6379
+18:01:22.326 [redisson-netty-2-20] INFO  o.r.c.p.MasterConnectionPool - [lambda$run$0,166] - 24 connections initialized for localhost/127.0.0.1:6379
+18:01:22.960 [main] INFO  c.a.c.s.SentinelWebMvcConfigurer - [addInterceptors,52] - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+18:01:28.409 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-6806"]
+18:01:28.422 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+18:01:28.422 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+18:01:28.601 [main] INFO  c.a.c.n.r.NacosServiceRegistry - [register,76] - nacos registry, DEFAULT_GROUP pmhub-project 192.168.46.1:6806 register finished
+18:01:30.469 [main] INFO  c.l.p.p.PmHubProjectApplication - [logStarted,61] - Started PmHubProjectApplication in 22.457 seconds (JVM running for 23.912)
+18:01:30.476 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=pmhub-project.yml, group=DEFAULT_GROUP
+18:01:30.477 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=pmhub-project-dev.yml, group=DEFAULT_GROUP
+18:01:30.477 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=pmhub-project, group=DEFAULT_GROUP
+18:01:31.567 [RMI TCP Connection(1)-192.168.46.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+18:02:30.581 [http-nio-6806-exec-6] INFO  i.s.t.TransactionManagerHolder - [<clinit>,40] - TransactionManager Singleton io.seata.tm.DefaultTransactionManager@77e00aae
+18:02:30.593 [http-nio-6806-exec-6] INFO  i.s.t.a.DefaultGlobalTransaction - [begin,118] - Begin new global transaction [192.168.46.1:8091:4179899449711726600]
+18:02:30.594 [http-nio-6806-exec-6] INFO  c.l.p.p.s.i.ProjectTaskServiceImpl - [add,348] - ---------------开始新建任务: 	xid: 192.168.46.1:8091:4179899449711726600
+18:02:40.946 [rpcDispatch_RMROLE_1_1_24] INFO  i.s.c.r.p.c.RmBranchRollbackProcessor - [process,56] - rm handle branch rollback process:xid=192.168.46.1:8091:4179899449711726600,branchId=4179899449711726601,branchType=AT,resourceId=jdbc:mysql://127.0.0.1:3306/pmhub-project,applicationData={"skipCheckLock":true}
+18:02:40.948 [rpcDispatch_RMROLE_1_1_24] INFO  i.s.r.AbstractRMHandler - [doBranchRollback,123] - Branch Rollbacking: 192.168.46.1:8091:4179899449711726600 4179899449711726601 jdbc:mysql://127.0.0.1:3306/pmhub-project
+18:02:40.982 [rpcDispatch_RMROLE_1_1_24] INFO  i.s.r.d.u.AbstractUndoLogManager - [undo,336] - xid 192.168.46.1:8091:4179899449711726600 branch 4179899449711726601, undo_log deleted with GlobalFinished
+18:02:40.983 [rpcDispatch_RMROLE_1_1_24] INFO  i.s.r.AbstractRMHandler - [doBranchRollback,131] - Branch Rollbacked result: PhaseTwo_Rollbacked
+18:02:40.989 [rpcDispatch_RMROLE_1_2_24] INFO  i.s.c.r.p.c.RmBranchRollbackProcessor - [process,56] - rm handle branch rollback process:xid=192.168.46.1:8091:4179899449711726600,branchId=4179899449711726602,branchType=AT,resourceId=jdbc:mysql://127.0.0.1:3306/pmhub-project,applicationData={"autoCommit":false,"skipCheckLock":true}
+18:02:40.989 [rpcDispatch_RMROLE_1_2_24] INFO  i.s.r.AbstractRMHandler - [doBranchRollback,123] - Branch Rollbacking: 192.168.46.1:8091:4179899449711726600 4179899449711726602 jdbc:mysql://127.0.0.1:3306/pmhub-project
+18:02:40.996 [rpcDispatch_RMROLE_1_2_24] INFO  i.s.r.d.u.AbstractUndoExecutor - [dataValidationAndGoOn,259] - Stop rollback because there is no data change between the before data snapshot and the current data snapshot.
+18:02:40.997 [rpcDispatch_RMROLE_1_2_24] INFO  i.s.r.d.u.AbstractUndoExecutor - [dataValidationAndGoOn,259] - Stop rollback because there is no data change between the before data snapshot and the current data snapshot.
+18:02:41.000 [rpcDispatch_RMROLE_1_2_24] INFO  i.s.r.d.u.AbstractUndoLogManager - [undo,336] - xid 192.168.46.1:8091:4179899449711726600 branch 4179899449711726602, undo_log deleted with GlobalFinished
+18:02:41.001 [rpcDispatch_RMROLE_1_2_24] INFO  i.s.r.AbstractRMHandler - [doBranchRollback,131] - Branch Rollbacked result: PhaseTwo_Rollbacked
+18:02:41.004 [rpcDispatch_RMROLE_1_3_24] INFO  i.s.c.r.p.c.RmBranchRollbackProcessor - [process,56] - rm handle branch rollback process:xid=192.168.46.1:8091:4179899449711726600,branchId=4179899449711726603,branchType=AT,resourceId=jdbc:mysql://127.0.0.1:3306/pmhub-project,applicationData={"skipCheckLock":true}
+18:02:41.004 [rpcDispatch_RMROLE_1_3_24] INFO  i.s.r.AbstractRMHandler - [doBranchRollback,123] - Branch Rollbacking: 192.168.46.1:8091:4179899449711726600 4179899449711726603 jdbc:mysql://127.0.0.1:3306/pmhub-project
+18:02:41.011 [rpcDispatch_RMROLE_1_3_24] INFO  i.s.r.d.u.AbstractUndoLogManager - [undo,336] - xid 192.168.46.1:8091:4179899449711726600 branch 4179899449711726603, undo_log deleted with GlobalFinished
+18:02:41.011 [rpcDispatch_RMROLE_1_3_24] INFO  i.s.r.AbstractRMHandler - [doBranchRollback,131] - Branch Rollbacked result: PhaseTwo_Rollbacked
+18:02:41.014 [rpcDispatch_RMROLE_1_4_24] INFO  i.s.c.r.p.c.RmBranchRollbackProcessor - [process,56] - rm handle branch rollback process:xid=192.168.46.1:8091:4179899449711726600,branchId=4179899449711726604,branchType=AT,resourceId=jdbc:mysql://127.0.0.1:3306/pmhub-project,applicationData={"autoCommit":false,"skipCheckLock":true}
+18:02:41.014 [rpcDispatch_RMROLE_1_4_24] INFO  i.s.r.AbstractRMHandler - [doBranchRollback,123] - Branch Rollbacking: 192.168.46.1:8091:4179899449711726600 4179899449711726604 jdbc:mysql://127.0.0.1:3306/pmhub-project
+18:02:41.017 [rpcDispatch_RMROLE_1_4_24] INFO  i.s.r.d.u.AbstractUndoExecutor - [dataValidationAndGoOn,259] - Stop rollback because there is no data change between the before data snapshot and the current data snapshot.
+18:02:41.018 [rpcDispatch_RMROLE_1_4_24] INFO  i.s.r.d.u.AbstractUndoExecutor - [dataValidationAndGoOn,259] - Stop rollback because there is no data change between the before data snapshot and the current data snapshot.
+18:02:41.020 [rpcDispatch_RMROLE_1_4_24] INFO  i.s.r.d.u.AbstractUndoLogManager - [undo,336] - xid 192.168.46.1:8091:4179899449711726600 branch 4179899449711726604, undo_log deleted with GlobalFinished
+18:02:41.022 [rpcDispatch_RMROLE_1_4_24] INFO  i.s.r.AbstractRMHandler - [doBranchRollback,131] - Branch Rollbacked result: PhaseTwo_Rollbacked
+18:02:41.024 [rpcDispatch_RMROLE_1_5_24] INFO  i.s.c.r.p.c.RmBranchRollbackProcessor - [process,56] - rm handle branch rollback process:xid=192.168.46.1:8091:4179899449711726600,branchId=4179899449711726605,branchType=AT,resourceId=jdbc:mysql://127.0.0.1:3306/pmhub-project,applicationData={"autoCommit":false,"skipCheckLock":true}
+18:02:41.025 [rpcDispatch_RMROLE_1_5_24] INFO  i.s.r.AbstractRMHandler - [doBranchRollback,123] - Branch Rollbacking: 192.168.46.1:8091:4179899449711726600 4179899449711726605 jdbc:mysql://127.0.0.1:3306/pmhub-project
+18:02:41.030 [rpcDispatch_RMROLE_1_5_24] INFO  i.s.r.d.u.AbstractUndoLogManager - [undo,336] - xid 192.168.46.1:8091:4179899449711726600 branch 4179899449711726605, undo_log deleted with GlobalFinished
+18:02:41.031 [rpcDispatch_RMROLE_1_5_24] INFO  i.s.r.AbstractRMHandler - [doBranchRollback,131] - Branch Rollbacked result: PhaseTwo_Rollbacked
+18:02:41.033 [rpcDispatch_RMROLE_1_6_24] INFO  i.s.c.r.p.c.RmBranchRollbackProcessor - [process,56] - rm handle branch rollback process:xid=192.168.46.1:8091:4179899449711726600,branchId=4179899449711726606,branchType=AT,resourceId=jdbc:mysql://127.0.0.1:3306/pmhub-project,applicationData={"autoCommit":false,"skipCheckLock":true}
+18:02:41.033 [rpcDispatch_RMROLE_1_6_24] INFO  i.s.r.AbstractRMHandler - [doBranchRollback,123] - Branch Rollbacking: 192.168.46.1:8091:4179899449711726600 4179899449711726606 jdbc:mysql://127.0.0.1:3306/pmhub-project
+18:02:41.037 [rpcDispatch_RMROLE_1_6_24] INFO  i.s.r.d.u.AbstractUndoExecutor - [dataValidationAndGoOn,259] - Stop rollback because there is no data change between the before data snapshot and the current data snapshot.
+18:02:41.038 [rpcDispatch_RMROLE_1_6_24] INFO  i.s.r.d.u.AbstractUndoExecutor - [dataValidationAndGoOn,259] - Stop rollback because there is no data change between the before data snapshot and the current data snapshot.
+18:02:41.040 [rpcDispatch_RMROLE_1_6_24] INFO  i.s.r.d.u.AbstractUndoLogManager - [undo,336] - xid 192.168.46.1:8091:4179899449711726600 branch 4179899449711726606, undo_log deleted with GlobalFinished
+18:02:41.040 [rpcDispatch_RMROLE_1_6_24] INFO  i.s.r.AbstractRMHandler - [doBranchRollback,131] - Branch Rollbacked result: PhaseTwo_Rollbacked
+18:02:41.047 [http-nio-6806-exec-6] INFO  i.s.t.a.DefaultGlobalTransaction - [suspend,199] - Suspending current transaction, xid = 192.168.46.1:8091:4179899449711726600
+18:02:41.047 [http-nio-6806-exec-6] INFO  i.s.t.a.DefaultGlobalTransaction - [rollback,189] - [192.168.46.1:8091:4179899449711726600] rollback status: Rollbacked
+22:16:54.053 [NettyClientSelector_RMROLE_1_1] INFO  i.s.c.r.n.NettyClientChannelManager - [releaseChannel,133] - return to pool, rm channel:[id: 0xcdd4912d, L:/192.168.46.1:63745 - R:/192.168.46.1:8091]
+22:16:54.053 [NettyClientSelector_TMROLE_1_1] INFO  i.s.c.r.n.NettyClientChannelManager - [releaseChannel,133] - return to pool, rm channel:[id: 0xde1fa4e3, L:/192.168.46.1:63732 - R:/192.168.46.1:8091]
+22:16:54.054 [NettyClientSelector_RMROLE_1_1] INFO  i.s.c.r.n.AbstractNettyRemotingClient - [exceptionCaught,480] - remove exception rm channel:[id: 0xcdd4912d, L:/192.168.46.1:63745 - R:/192.168.46.1:8091]
+22:16:54.054 [NettyClientSelector_TMROLE_1_1] INFO  i.s.c.r.n.AbstractNettyRemotingClient - [exceptionCaught,480] - remove exception rm channel:[id: 0xde1fa4e3, L:/192.168.46.1:63732 - R:/192.168.46.1:8091]
+22:16:54.055 [NettyClientSelector_RMROLE_1_1] INFO  i.s.c.r.n.AbstractNettyRemotingClient - [channelInactive,438] - channel inactive: [id: 0xcdd4912d, L:/192.168.46.1:63745 ! R:/192.168.46.1:8091]
+22:16:54.055 [NettyClientSelector_TMROLE_1_1] INFO  i.s.c.r.n.AbstractNettyRemotingClient - [channelInactive,438] - channel inactive: [id: 0xde1fa4e3, L:/192.168.46.1:63732 ! R:/192.168.46.1:8091]
+22:16:54.056 [NettyClientSelector_RMROLE_1_1] INFO  i.s.c.r.n.NettyPoolableFactory - [validateObject,133] - channel valid false,channel:[id: 0xcdd4912d, L:/192.168.46.1:63745 ! R:/192.168.46.1:8091]
+22:16:54.056 [NettyClientSelector_TMROLE_1_1] INFO  i.s.c.r.n.NettyPoolableFactory - [validateObject,133] - channel valid false,channel:[id: 0xde1fa4e3, L:/192.168.46.1:63732 ! R:/192.168.46.1:8091]
+22:16:54.056 [NettyClientSelector_TMROLE_1_1] INFO  i.s.c.r.n.NettyPoolableFactory - [destroyObject,120] - will destroy channel:[id: 0xde1fa4e3, L:/192.168.46.1:63732 ! R:/192.168.46.1:8091]
+22:16:54.056 [NettyClientSelector_RMROLE_1_1] INFO  i.s.c.r.n.NettyPoolableFactory - [destroyObject,120] - will destroy channel:[id: 0xcdd4912d, L:/192.168.46.1:63745 ! R:/192.168.46.1:8091]
+22:16:54.056 [NettyClientSelector_TMROLE_1_1] INFO  i.s.c.r.n.AbstractNettyRemotingClient - [close,488] - ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0xde1fa4e3, L:/192.168.46.1:63732 ! R:/192.168.46.1:8091]) will closed
+22:16:54.056 [NettyClientSelector_RMROLE_1_1] INFO  i.s.c.r.n.AbstractNettyRemotingClient - [close,488] - ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0xcdd4912d, L:/192.168.46.1:63745 ! R:/192.168.46.1:8091]) will closed
+22:16:54.056 [NettyClientSelector_TMROLE_1_1] INFO  i.s.c.r.n.AbstractNettyRemotingClient - [close,488] - ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0xde1fa4e3, L:/192.168.46.1:63732 ! R:/192.168.46.1:8091]) will closed
+22:16:54.056 [NettyClientSelector_RMROLE_1_1] INFO  i.s.c.r.n.AbstractNettyRemotingClient - [close,488] - ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0xcdd4912d, L:/192.168.46.1:63745 ! R:/192.168.46.1:8091]) will closed
+22:16:55.967 [timeoutChecker_1_1] INFO  i.s.c.r.n.NettyClientChannelManager - [acquireChannel,108] - will connect to 192.168.46.1:8091
+22:16:55.968 [timeoutChecker_1_1] INFO  i.s.c.r.n.NettyPoolableFactory - [makeObject,56] - NettyPool create channel to transactionRole:TMROLE,address:192.168.46.1:8091,msg:< RegisterTMRequest{applicationId='pmhub-project', transactionServiceGroup='default_tx_group'} >
+22:16:57.143 [timeoutChecker_2_1] INFO  i.s.c.r.n.NettyClientChannelManager - [acquireChannel,108] - will connect to 192.168.46.1:8091
+22:16:57.143 [timeoutChecker_2_1] INFO  i.s.c.r.n.RmNettyRemotingClient - [lambda$getPoolKeyFunction$0,276] - RM will register :jdbc:mysql://127.0.0.1:3306/pmhub-project
+22:16:57.143 [timeoutChecker_2_1] INFO  i.s.c.r.n.NettyPoolableFactory - [validateObject,133] - channel valid false,channel:[id: 0xcdd4912d, L:/192.168.46.1:63745 ! R:/192.168.46.1:8091]
+22:16:57.144 [timeoutChecker_2_1] INFO  i.s.c.r.n.NettyPoolableFactory - [destroyObject,120] - will destroy channel:[id: 0xcdd4912d, L:/192.168.46.1:63745 ! R:/192.168.46.1:8091]
+22:16:57.145 [timeoutChecker_2_1] INFO  i.s.c.r.n.NettyPoolableFactory - [makeObject,56] - NettyPool create channel to transactionRole:RMROLE,address:192.168.46.1:8091,msg:< RegisterRMRequest{resourceIds='jdbc:mysql://127.0.0.1:3306/pmhub-project', applicationId='pmhub-project', transactionServiceGroup='default_tx_group'} >
+22:16:58.028 [NettyClientSelector_TMROLE_1_1] INFO  i.s.c.r.n.AbstractNettyRemotingClient - [close,488] - ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x3bad2d76]) will closed
+22:16:59.171 [NettyClientSelector_RMROLE_1_1] INFO  i.s.c.r.n.AbstractNettyRemotingClient - [close,488] - ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0xda60f630]) will closed

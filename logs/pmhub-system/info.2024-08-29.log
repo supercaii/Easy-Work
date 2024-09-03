@@ -1,0 +1,46 @@
+10:43:51.593 [main] INFO  c.a.n.c.e.SearchableProperties - [sortPropertySourceDefaultOrder,197] - properties search order:PROPERTIES->JVM->ENV->DEFAULT_SETTING
+10:43:51.636 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.5.Final
+10:43:51.893 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+10:43:51.894 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+10:43:54.765 [main] INFO  c.l.p.s.PmHubSystemApplication - [logStartupProfileInfo,638] - The following 1 profile is active: "dev"
+10:43:56.823 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-6801"]
+10:43:56.824 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+10:43:56.824 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.83]
+10:43:57.044 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+10:43:57.779 [main] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.16.2
+10:43:58.424 [redisson-netty-2-14] INFO  o.r.c.p.MasterPubSubConnectionPool - [lambda$run$0,166] - 1 connections initialized for localhost/127.0.0.1:6379
+10:43:58.451 [redisson-netty-2-20] INFO  o.r.c.p.MasterConnectionPool - [lambda$run$0,166] - 24 connections initialized for localhost/127.0.0.1:6379
+10:44:01.271 [main] INFO  c.a.d.p.DruidDataSource - [init,1009] - {dataSource-1} inited
+10:44:02.066 [main] INFO  c.a.c.s.SentinelWebMvcConfigurer - [addInterceptors,52] - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+10:44:05.474 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-6801"]
+10:44:05.495 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+10:44:05.495 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+10:44:05.692 [main] INFO  c.a.c.n.r.NacosServiceRegistry - [register,76] - nacos registry, DEFAULT_GROUP pmhub-system 192.168.46.1:6801 register finished
+10:44:06.910 [main] INFO  c.l.p.s.PmHubSystemApplication - [logStarted,61] - Started PmHubSystemApplication in 16.313 seconds (JVM running for 17.635)
+10:44:06.925 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=pmhub-system.yml, group=DEFAULT_GROUP
+10:44:06.926 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=pmhub-system, group=DEFAULT_GROUP
+10:44:06.927 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=pmhub-system-dev.yml, group=DEFAULT_GROUP
+10:44:08.020 [RMI TCP Connection(11)-192.168.46.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+13:21:49.371 [main] INFO  c.a.n.c.e.SearchableProperties - [sortPropertySourceDefaultOrder,197] - properties search order:PROPERTIES->JVM->ENV->DEFAULT_SETTING
+13:21:49.417 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.5.Final
+13:21:49.664 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+13:21:49.665 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+13:21:53.520 [main] INFO  c.l.p.s.PmHubSystemApplication - [logStartupProfileInfo,638] - The following 1 profile is active: "dev"
+13:21:55.561 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-6801"]
+13:21:55.563 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+13:21:55.563 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.83]
+13:21:55.770 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+13:21:56.465 [main] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.16.2
+13:21:57.064 [redisson-netty-2-14] INFO  o.r.c.p.MasterPubSubConnectionPool - [lambda$run$0,166] - 1 connections initialized for localhost/127.0.0.1:6379
+13:21:57.094 [redisson-netty-2-20] INFO  o.r.c.p.MasterConnectionPool - [lambda$run$0,166] - 24 connections initialized for localhost/127.0.0.1:6379
+13:21:59.878 [main] INFO  c.a.d.p.DruidDataSource - [init,1009] - {dataSource-1} inited
+13:22:00.698 [main] INFO  c.a.c.s.SentinelWebMvcConfigurer - [addInterceptors,52] - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+13:22:05.906 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-6801"]
+13:22:05.925 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+13:22:05.925 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+13:22:06.123 [main] INFO  c.a.c.n.r.NacosServiceRegistry - [register,76] - nacos registry, DEFAULT_GROUP pmhub-system 192.168.46.1:6801 register finished
+13:22:08.231 [main] INFO  c.l.p.s.PmHubSystemApplication - [logStarted,61] - Started PmHubSystemApplication in 20.829 seconds (JVM running for 22.092)
+13:22:08.243 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=pmhub-system.yml, group=DEFAULT_GROUP
+13:22:08.244 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=pmhub-system, group=DEFAULT_GROUP
+13:22:08.245 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=pmhub-system-dev.yml, group=DEFAULT_GROUP
+13:22:08.723 [RMI TCP Connection(8)-192.168.46.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'

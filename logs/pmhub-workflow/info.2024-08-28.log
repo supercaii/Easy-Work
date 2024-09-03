@@ -1,0 +1,63 @@
+22:40:48.971 [main] INFO  c.a.n.c.e.SearchableProperties - [sortPropertySourceDefaultOrder,197] - properties search order:PROPERTIES->JVM->ENV->DEFAULT_SETTING
+22:40:49.015 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.5.Final
+22:40:49.272 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+22:40:49.272 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+22:40:53.198 [main] INFO  c.l.p.w.PmHubWorkflowApplication - [logStartupProfileInfo,638] - The following 1 profile is active: "dev"
+22:40:55.220 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-6808"]
+22:40:55.221 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+22:40:55.221 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.83]
+22:40:55.412 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+22:40:55.970 [main] INFO  o.f.s.b.ProcessEngineAutoConfiguration - [discoverDeploymentResources,104] - No deployment resources were found for autodeployment
+22:40:58.594 [main] INFO  o.f.s.b.e.EventRegistryAutoConfiguration - [discoverDeploymentResources,104] - No deployment resources were found for autodeployment
+22:40:58.657 [main] INFO  o.f.s.SpringProcessEngineConfiguration - [initConfigurators,1073] - Found 2 Engine Configurators in total:
+22:40:58.658 [main] INFO  o.f.s.SpringProcessEngineConfiguration - [initConfigurators,1075] - class org.flowable.eventregistry.spring.configurator.SpringEventRegistryConfigurator (priority:100000)
+22:40:58.658 [main] INFO  o.f.s.SpringProcessEngineConfiguration - [initConfigurators,1075] - class org.flowable.idm.engine.configurator.IdmEngineConfigurator (priority:150000)
+22:40:58.658 [main] INFO  o.f.s.SpringProcessEngineConfiguration - [configuratorsBeforeInit,1101] - Executing beforeInit() of class org.flowable.eventregistry.spring.configurator.SpringEventRegistryConfigurator (priority:100000)
+22:40:58.662 [main] INFO  o.f.s.SpringProcessEngineConfiguration - [configuratorsBeforeInit,1101] - Executing beforeInit() of class org.flowable.idm.engine.configurator.IdmEngineConfigurator (priority:150000)
+22:40:59.461 [main] INFO  c.a.d.p.DruidDataSource - [init,1009] - {dataSource-1} inited
+22:41:00.172 [main] INFO  o.f.s.SpringProcessEngineConfiguration - [configuratorsAfterInit,1108] - Executing configure() of class org.flowable.eventregistry.spring.configurator.SpringEventRegistryConfigurator (priority:100000)
+22:41:00.554 [main] INFO  l.lockservice - [log,30] - Successfully acquired change log lock
+22:41:01.448 [main] INFO  liquibase.changelog - [log,30] - Reading from `pmhub-workflow`.FLW_EV_DATABASECHANGELOG
+22:41:01.509 [main] INFO  l.lockservice - [log,30] - Successfully released change log lock
+22:41:01.510 [main] INFO  o.f.e.i.EventRegistryEngineImpl - [<init>,53] - EventRegistryEngine default created
+22:41:01.511 [main] INFO  o.f.s.SpringProcessEngineConfiguration - [configuratorsAfterInit,1108] - Executing configure() of class org.flowable.idm.engine.configurator.IdmEngineConfigurator (priority:150000)
+22:41:01.856 [main] INFO  o.f.i.e.i.IdmEngineImpl - [<init>,52] - IdmEngine default created
+22:41:01.910 [main] INFO  o.f.e.i.ProcessEngineImpl - [<init>,89] - ProcessEngine default created
+22:41:01.952 [main] INFO  o.f.e.i.c.ValidateV5EntitiesCmd - [execute,43] - Total of v5 deployments found: 0
+22:41:02.396 [main] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.16.2
+22:41:03.007 [redisson-netty-2-17] INFO  o.r.c.p.MasterPubSubConnectionPool - [lambda$run$0,166] - 1 connections initialized for localhost/127.0.0.1:6379
+22:41:03.033 [redisson-netty-2-20] INFO  o.r.c.p.MasterConnectionPool - [lambda$run$0,166] - 24 connections initialized for localhost/127.0.0.1:6379
+22:41:03.718 [main] INFO  c.a.c.s.SentinelWebMvcConfigurer - [addInterceptors,52] - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+22:41:09.355 [main] INFO  o.f.j.s.i.a.AbstractAsyncExecutor - [start,108] - Starting up the async job executor [org.flowable.spring.job.service.SpringAsyncExecutor] for engine bpmn
+22:41:09.363 [Thread-19] INFO  o.f.j.s.i.a.ResetExpiredJobsRunnable - [run,63] - starting to reset expired jobs for engine bpmn
+22:41:09.363 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-6808"]
+22:41:09.364 [Thread-17] INFO  o.f.j.s.i.a.AcquireAsyncJobsDueRunnable - [run,106] - starting to acquire async jobs due for engine bpmn
+22:41:09.364 [Thread-18] INFO  o.f.j.s.i.a.AcquireTimerJobsRunnable - [run,109] - starting to acquire async jobs due for engine bpmn
+22:41:09.390 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+22:41:09.391 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+22:41:09.592 [main] INFO  c.a.c.n.r.NacosServiceRegistry - [register,76] - nacos registry, DEFAULT_GROUP pmhub-workflow 192.168.46.1:6808 register finished
+22:41:11.653 [main] INFO  c.l.p.w.PmHubWorkflowApplication - [logStarted,61] - Started PmHubWorkflowApplication in 24.622 seconds (JVM running for 26.02)
+22:41:11.668 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=pmhub-workflow-dev.yml, group=DEFAULT_GROUP
+22:41:11.669 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=pmhub-workflow, group=DEFAULT_GROUP
+22:41:11.669 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=pmhub-workflow.yml, group=DEFAULT_GROUP
+22:47:58.524 [main] INFO  c.a.n.c.e.SearchableProperties - [sortPropertySourceDefaultOrder,197] - properties search order:PROPERTIES->JVM->ENV->DEFAULT_SETTING
+22:47:58.569 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.5.Final
+22:47:58.839 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+22:47:58.839 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+22:48:02.942 [main] INFO  c.l.p.w.PmHubWorkflowApplication - [logStartupProfileInfo,638] - The following 1 profile is active: "dev"
+22:48:05.071 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-6808"]
+22:48:05.072 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+22:48:05.073 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.83]
+22:48:05.266 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+22:48:05.912 [main] INFO  o.f.s.b.ProcessEngineAutoConfiguration - [discoverDeploymentResources,104] - No deployment resources were found for autodeployment
+22:48:08.657 [main] INFO  o.f.s.b.e.EventRegistryAutoConfiguration - [discoverDeploymentResources,104] - No deployment resources were found for autodeployment
+22:48:08.711 [main] INFO  o.f.s.SpringProcessEngineConfiguration - [initConfigurators,1073] - Found 2 Engine Configurators in total:
+22:48:08.712 [main] INFO  o.f.s.SpringProcessEngineConfiguration - [initConfigurators,1075] - class org.flowable.eventregistry.spring.configurator.SpringEventRegistryConfigurator (priority:100000)
+22:48:08.712 [main] INFO  o.f.s.SpringProcessEngineConfiguration - [initConfigurators,1075] - class org.flowable.idm.engine.configurator.IdmEngineConfigurator (priority:150000)
+22:48:08.712 [main] INFO  o.f.s.SpringProcessEngineConfiguration - [configuratorsBeforeInit,1101] - Executing beforeInit() of class org.flowable.eventregistry.spring.configurator.SpringEventRegistryConfigurator (priority:100000)
+22:48:08.715 [main] INFO  o.f.s.SpringProcessEngineConfiguration - [configuratorsBeforeInit,1101] - Executing beforeInit() of class org.flowable.idm.engine.configurator.IdmEngineConfigurator (priority:150000)
+22:48:09.549 [main] INFO  c.a.d.p.DruidDataSource - [init,1009] - {dataSource-1} inited
+22:48:10.236 [main] INFO  o.f.s.SpringProcessEngineConfiguration - [configuratorsAfterInit,1108] - Executing configure() of class org.flowable.eventregistry.spring.configurator.SpringEventRegistryConfigurator (priority:100000)
+22:48:10.310 [main] INFO  c.a.d.p.DruidDataSource - [close,2174] - {dataSource-1} closing ...
+22:48:10.314 [main] INFO  c.a.d.p.DruidDataSource - [close,2247] - {dataSource-1} closed
+22:48:10.316 [main] INFO  o.a.c.c.StandardService - [log,173] - Stopping service [Tomcat]

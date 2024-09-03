@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/pmhub-api/pmhub-api-system/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pmhub-api/pmhub-api-system/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pmhub-api/pmhub-api-workflow/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pmhub-api/pmhub-api-workflow/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pmhub-auth/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pmhub-auth/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pmhub-base/pmhub-base-core/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pmhub-base/pmhub-base-core/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pmhub-base/pmhub-base-datasource/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pmhub-base/pmhub-base-datasource/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pmhub-base/pmhub-base-notice/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pmhub-base/pmhub-base-notice/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pmhub-base/pmhub-base-security/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pmhub-base/pmhub-base-security/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pmhub-base/pmhub-base-swagger/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pmhub-base/pmhub-base-swagger/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pmhub-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pmhub-gateway/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pmhub-modules/pmhub-gen/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pmhub-modules/pmhub-gen/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pmhub-modules/pmhub-job/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pmhub-modules/pmhub-job/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pmhub-modules/pmhub-project/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pmhub-modules/pmhub-project/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pmhub-modules/pmhub-system/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pmhub-modules/pmhub-system/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pmhub-modules/pmhub-workflow/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pmhub-modules/pmhub-workflow/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pmhub-monitor/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pmhub-monitor/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

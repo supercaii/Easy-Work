@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="pmhub-base-seata" />
+        <module name="pmhub-auth" />
+        <module name="pmhub-gateway" />
+        <module name="pmhub-monitor" />
+        <module name="pmhub-base-datasource" />
+        <module name="pmhub-base-core" />
+        <module name="pmhub-job" />
+        <module name="pmhub-api-system" />
+        <module name="pmhub-base-security" />
+        <module name="pmhub-base-swagger" />
+        <module name="pmhub-system" />
+        <module name="pmhub-base-notice" />
+        <module name="pmhub-project" />
+        <module name="pmhub-gen" />
+        <module name="pmhub-api-workflow" />
+        <module name="pmhub-workflow" />
+        <module name="pmhub-base-sensitive" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="8">
+      <module name="pmhub" target="1.8" />
+      <module name="pmhub-api" target="1.8" />
+      <module name="pmhub-api-system" target="1.8" />
+      <module name="pmhub-api-workflow" target="1.8" />
+      <module name="pmhub-auth" target="1.8" />
+      <module name="pmhub-base" target="1.8" />
+      <module name="pmhub-base-core" target="1.8" />
+      <module name="pmhub-base-datasource" target="1.8" />
+      <module name="pmhub-base-notice" target="1.8" />
+      <module name="pmhub-base-seata" target="1.8" />
+      <module name="pmhub-base-security" target="1.8" />
+      <module name="pmhub-base-sensitive" target="1.8" />
+      <module name="pmhub-base-swagger" target="1.8" />
+      <module name="pmhub-gateway" target="1.8" />
+      <module name="pmhub-gen" target="1.8" />
+      <module name="pmhub-job" target="1.8" />
+      <module name="pmhub-modules" target="1.8" />
+      <module name="pmhub-monitor" target="1.8" />
+      <module name="pmhub-project" target="1.8" />
+      <module name="pmhub-system" target="1.8" />
+      <module name="pmhub-workflow" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

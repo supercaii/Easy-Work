@@ -1,0 +1,216 @@
+version : '3.8'
+services:
+  pmhub-nacos:
+    container_name: pmhub-nacos
+    image: nacos/nacos-server
+    build:
+      context: ./nacos
+    environment:
+      - MODE=standalone
+    volumes:
+      - ./nacos/logs/:/home/nacos/logs
+      - ./nacos/conf/application.properties:/home/nacos/conf/application.properties
+    ports:
+      - "8848:8848"
+      - "9848:9848"
+      - "9849:9849"
+    depends_on:
+      - pmhub-mysql
+  pmhub-mysql:
+    container_name: pmhub-mysql
+    image: mysql:5.7
+    build:
+      context: ./mysql
+    ports:
+      - "33706:3306" # 有经验的开发不会直接暴露3306端口
+    volumes:
+      - ./mysql/conf:/etc/mysql/conf.d
+      - ./mysql/logs:/logs
+      - ./mysql/data:/var/lib/mysql
+    command: [
+          'mysqld',
+          '--innodb-buffer-pool-size=80M',
+          '--character-set-server=utf8mb4',
+          '--collation-server=utf8mb4_unicode_ci',
+          '--default-time-zone=+8:00',
+          '--lower-case-table-names=2'
+        ]
+    environment:
+      MYSQL_ROOT_PASSWORD: laigeoffer-pmhub #上线修改为复杂密码，否则很容易被黑
+  pmhub-redis:
+    container_name: pmhub-redis
+    image: redis
+    build:
+      context: ./redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - ./redis/conf/redis.conf:/home/pmhub/redis/redis.conf
+      - ./redis/data:/data
+    command: redis-server /home/pmhub/redis/redis.conf
+  pmhub-gateway:
+    container_name: pmhub-gateway
+    build:
+      context: pmhub/gateway
+      dockerfile: dockerfile
+    ports:
+      - "6880:6880"
+    environment:
+      - SPRING_PROFILES_ACTIVE=dev
+      - SPRING_CLOUD_NACOS_DISCOVERY_SERVER-ADDR=http://pmhub-nacos:8848
+      - SPRING_CLOUD_NACOS_DISCOVERY_USERNAME=nacos
+      - SPRING_CLOUD_NACOS_DISCOVERY_PASSWORD=nacos
+      - SPRING_CLOUD_NACOS_CONFIG_SERVER-ADDR=http://pmhub-nacos:8848
+      - SPRING_CLOUD_NACOS_CONFIG_USERNAME=nacos
+      - SPRING_CLOUD_NACOS_CONFIG_PASSWORD=nacos
+      - SPRING_REDIS_HOST=pmhub-redis
+      - SPRING_REDIS_PORT=6379
+    depends_on:
+      - pmhub-redis
+      - pmhub-nacos
+    links:
+      - pmhub-redis
+      - pmhub-nacos
+  pmhub-auth:
+    container_name: pmhub-auth
+    build:
+      context: pmhub/auth
+      dockerfile: dockerfile
+    ports:
+      - "6800:6800"
+    environment:
+      - SPRING_PROFILES_ACTIVE=dev
+      - SPRING_CLOUD_NACOS_DISCOVERY_SERVER-ADDR=http://pmhub-nacos:8848
+      - SPRING_CLOUD_NACOS_DISCOVERY_USERNAME=nacos
+      - SPRING_CLOUD_NACOS_DISCOVERY_PASSWORD=nacos
+      - SPRING_CLOUD_NACOS_CONFIG_SERVER-ADDR=http://pmhub-nacos:8848
+      - SPRING_CLOUD_NACOS_CONFIG_USERNAME=nacos
+      - SPRING_CLOUD_NACOS_CONFIG_PASSWORD=nacos
+      - SPRING_REDIS_HOST=pmhub-redis
+      - SPRING_REDIS_PORT=6379
+    depends_on:
+      - pmhub-redis
+    links:
+      - pmhub-redis
+  pmhub-system:
+    container_name: pmhub-system
+    build:
+      context: pmhub/modules/system
+      dockerfile: dockerfile
+    ports:
+      - "6801:6801"
+    environment:
+      - SPRING_PROFILES_ACTIVE=dev
+      - SPRING_CLOUD_NACOS_DISCOVERY_SERVER-ADDR=http://pmhub-nacos:8848
+      - SPRING_CLOUD_NACOS_DISCOVERY_USERNAME=nacos
+      - SPRING_CLOUD_NACOS_DISCOVERY_PASSWORD=nacos
+      - SPRING_CLOUD_NACOS_CONFIG_SERVER-ADDR=http://pmhub-nacos:8848
+      - SPRING_CLOUD_NACOS_CONFIG_USERNAME=nacos
+      - SPRING_CLOUD_NACOS_CONFIG_PASSWORD=nacos
+      - SPRING_REDIS_HOST=pmhub-redis
+      - SPRING_REDIS_PORT=6379
+    depends_on:
+      - pmhub-redis
+      - pmhub-mysql
+    links:
+      - pmhub-redis
+      - pmhub-mysql
+  pmhub-gen:
+    container_name: pmhub-gen
+    build:
+      context: pmhub/modules/gen
+      dockerfile: dockerfile
+    ports:
+      - "6802:6802"
+    environment:
+      - SPRING_PROFILES_ACTIVE=dev
+      - SPRING_CLOUD_NACOS_DISCOVERY_SERVER-ADDR=http://pmhub-nacos:8848
+      - SPRING_CLOUD_NACOS_DISCOVERY_USERNAME=nacos
+      - SPRING_CLOUD_NACOS_DISCOVERY_PASSWORD=nacos
+      - SPRING_CLOUD_NACOS_CONFIG_SERVER-ADDR=http://pmhub-nacos:8848
+      - SPRING_CLOUD_NACOS_CONFIG_USERNAME=nacos
+      - SPRING_CLOUD_NACOS_CONFIG_PASSWORD=nacos
+      - SPRING_REDIS_HOST=pmhub-redis
+      - SPRING_REDIS_PORT=6379
+    depends_on:
+      - pmhub-mysql
+    links:
+      - pmhub-mysql
+  pmhub-job:
+    container_name: pmhub-job
+    build:
+      context: pmhub/modules/job
+      dockerfile: dockerfile
+    ports:
+      - "6803:6803"
+    environment:
+      - SPRING_PROFILES_ACTIVE=dev
+      - SPRING_CLOUD_NACOS_DISCOVERY_SERVER-ADDR=http://pmhub-nacos:8848
+      - SPRING_CLOUD_NACOS_DISCOVERY_USERNAME=nacos
+      - SPRING_CLOUD_NACOS_DISCOVERY_PASSWORD=nacos
+      - SPRING_CLOUD_NACOS_CONFIG_SERVER-ADDR=http://pmhub-nacos:8848
+      - SPRING_CLOUD_NACOS_CONFIG_USERNAME=nacos
+      - SPRING_CLOUD_NACOS_CONFIG_PASSWORD=nacos
+      - SPRING_REDIS_HOST=pmhub-redis
+      - SPRING_REDIS_PORT=6379
+    depends_on:
+      - pmhub-mysql
+    links:
+      - pmhub-mysql
+
+  pmhub-project:
+    container_name: pmhub-project
+    build:
+      context: pmhub/modules/project
+      dockerfile: dockerfile
+    ports:
+      - "6806:6806"
+    environment:
+      - SPRING_PROFILES_ACTIVE=dev
+      - SPRING_CLOUD_NACOS_DISCOVERY_SERVER-ADDR=http://pmhub-nacos:8848
+      - SPRING_CLOUD_NACOS_DISCOVERY_USERNAME=nacos
+      - SPRING_CLOUD_NACOS_DISCOVERY_PASSWORD=nacos
+      - SPRING_CLOUD_NACOS_CONFIG_SERVER-ADDR=http://pmhub-nacos:8848
+      - SPRING_CLOUD_NACOS_CONFIG_USERNAME=nacos
+      - SPRING_CLOUD_NACOS_CONFIG_PASSWORD=nacos
+      - SPRING_REDIS_HOST=pmhub-redis
+      - SPRING_REDIS_PORT=6379
+    depends_on:
+      - pmhub-redis
+      - pmhub-mysql
+    links:
+      - pmhub-redis
+      - pmhub-mysql
+
+  pmhub-workflow:
+    container_name: pmhub-workflow
+    build:
+      context: pmhub/modules/workflow
+      dockerfile: dockerfile
+    ports:
+      - "6808:6808"
+    environment:
+      - SPRING_PROFILES_ACTIVE=dev
+      - SPRING_CLOUD_NACOS_DISCOVERY_SERVER-ADDR=http://pmhub-nacos:8848
+      - SPRING_CLOUD_NACOS_DISCOVERY_USERNAME=nacos
+      - SPRING_CLOUD_NACOS_DISCOVERY_PASSWORD=nacos
+      - SPRING_CLOUD_NACOS_CONFIG_SERVER-ADDR=http://pmhub-nacos:8848
+      - SPRING_CLOUD_NACOS_CONFIG_USERNAME=nacos
+      - SPRING_CLOUD_NACOS_CONFIG_PASSWORD=nacos
+      - SPRING_REDIS_HOST=pmhub-redis
+      - SPRING_REDIS_PORT=6379
+    depends_on:
+      - pmhub-redis
+      - pmhub-mysql
+    links:
+      - pmhub-redis
+      - pmhub-mysql
+
+
+  pmhub-monitor:
+    container_name: pmhub-monitor
+    build:
+      context: pmhub/monitor
+      dockerfile: dockerfile
+    ports:
+      - "6888:6888"

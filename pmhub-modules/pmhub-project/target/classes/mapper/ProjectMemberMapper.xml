@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.laigeoffer.pmhub.project.mapper.ProjectMemberMapper">
+    <select id="searchMember" parameterType="java.lang.String" resultType="com.laigeoffer.pmhub.project.domain.vo.project.member.ProjectMemberResVO">
+        select pm.user_id, pm.joined_time from pmhub_project_member pm
+        where pm.pt_id = #{data.projectId}
+    </select>
+
+    <select id="queryExecutorList" parameterType="java.lang.String" resultType="com.laigeoffer.pmhub.project.domain.vo.project.member.ProjectMemberResVO">
+        select pm.user_id from pmhub_project_member pm
+        where pm.pt_id = #{projectId}
+    </select>
+    <select id="queryTaskUserList" parameterType="java.lang.String" resultType="com.laigeoffer.pmhub.project.domain.vo.project.member.ProjectMemberResVO">
+        select pm.user_id from pmhub_project_member pm
+        where pm.pt_id = #{taskId}
+    </select>
+</mapper>

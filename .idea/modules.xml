@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/pmhub.iml" filepath="$PROJECT_DIR$/pmhub.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pmhub-api/pmhub-api.iml" filepath="$PROJECT_DIR$/pmhub-api/pmhub-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pmhub-api/pmhub-api-system/pmhub-api-system.iml" filepath="$PROJECT_DIR$/pmhub-api/pmhub-api-system/pmhub-api-system.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pmhub-api/pmhub-api-workflow/pmhub-api-workflow.iml" filepath="$PROJECT_DIR$/pmhub-api/pmhub-api-workflow/pmhub-api-workflow.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pmhub-auth/pmhub-auth.iml" filepath="$PROJECT_DIR$/pmhub-auth/pmhub-auth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pmhub-base/pmhub-base.iml" filepath="$PROJECT_DIR$/pmhub-base/pmhub-base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pmhub-base/pmhub-base-core/pmhub-base-core.iml" filepath="$PROJECT_DIR$/pmhub-base/pmhub-base-core/pmhub-base-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pmhub-base/pmhub-base-datasource/pmhub-base-datasource.iml" filepath="$PROJECT_DIR$/pmhub-base/pmhub-base-datasource/pmhub-base-datasource.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pmhub-base/pmhub-base-notice/pmhub-base-notice.iml" filepath="$PROJECT_DIR$/pmhub-base/pmhub-base-notice/pmhub-base-notice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pmhub-base/pmhub-base-seata/pmhub-base-seata.iml" filepath="$PROJECT_DIR$/pmhub-base/pmhub-base-seata/pmhub-base-seata.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pmhub-base/pmhub-base-security/pmhub-base-security.iml" filepath="$PROJECT_DIR$/pmhub-base/pmhub-base-security/pmhub-base-security.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pmhub-base/pmhub-base-sensitive/pmhub-base-sensitive.iml" filepath="$PROJECT_DIR$/pmhub-base/pmhub-base-sensitive/pmhub-base-sensitive.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pmhub-base/pmhub-base-swagger/pmhub-base-swagger.iml" filepath="$PROJECT_DIR$/pmhub-base/pmhub-base-swagger/pmhub-base-swagger.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pmhub-gateway/pmhub-gateway.iml" filepath="$PROJECT_DIR$/pmhub-gateway/pmhub-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pmhub-modules/pmhub-gen/pmhub-gen.iml" filepath="$PROJECT_DIR$/pmhub-modules/pmhub-gen/pmhub-gen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pmhub-modules/pmhub-job/pmhub-job.iml" filepath="$PROJECT_DIR$/pmhub-modules/pmhub-job/pmhub-job.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pmhub-modules/pmhub-modules.iml" filepath="$PROJECT_DIR$/pmhub-modules/pmhub-modules.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pmhub-monitor/pmhub-monitor.iml" filepath="$PROJECT_DIR$/pmhub-monitor/pmhub-monitor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pmhub-modules/pmhub-project/pmhub-project.iml" filepath="$PROJECT_DIR$/pmhub-modules/pmhub-project/pmhub-project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pmhub-modules/pmhub-system/pmhub-system.iml" filepath="$PROJECT_DIR$/pmhub-modules/pmhub-system/pmhub-system.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pmhub-modules/pmhub-workflow/pmhub-workflow.iml" filepath="$PROJECT_DIR$/pmhub-modules/pmhub-workflow/pmhub-workflow.iml" />
+    </modules>
+  </component>
+</project>

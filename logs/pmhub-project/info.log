@@ -1,0 +1,61 @@
+15:55:45.519 [main] INFO  c.a.n.c.e.SearchableProperties - [sortPropertySourceDefaultOrder,197] - properties search order:PROPERTIES->JVM->ENV->DEFAULT_SETTING
+15:55:45.571 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.5.Final
+15:55:45.936 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+15:55:45.937 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+15:55:48.633 [main] INFO  c.l.p.p.PmHubProjectApplication - [logStartupProfileInfo,638] - The following 1 profile is active: "dev"
+15:55:50.528 [main] INFO  i.s.s.b.a.SeataAutoConfiguration - [globalTransactionScanner,63] - Automatically configure Seata
+15:55:50.608 [main] INFO  i.s.c.ConfigurationFactory - [load,69] - load Configuration from :Spring Configuration
+15:55:50.614 [main] INFO  i.s.c.ConfigurationFactory - [buildConfiguration,121] - load Configuration from :Spring Configuration
+15:55:50.907 [main] INFO  i.s.s.a.GlobalTransactionScanner - [initClient,208] - Initializing Global Transaction Clients ... 
+15:55:50.983 [main] INFO  i.s.c.r.n.NettyClientBootstrap - [start,147] - NettyClientBootstrap has started
+15:55:51.029 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+15:55:51.029 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+15:55:51.259 [main] INFO  i.s.s.a.GlobalTransactionScanner - [initClient,222] - Transaction Manager Client is initialized. applicationId[pmhub-project] txServiceGroup[default_tx_group]
+15:55:51.272 [main] INFO  i.s.r.d.AsyncWorker - [<init>,73] - Async Commit Buffer Limit: 10000
+15:55:51.273 [main] INFO  i.s.r.d.x.ResourceManagerXA - [init,59] - ResourceManagerXA init ...
+15:55:51.282 [main] INFO  i.s.c.r.n.NettyClientBootstrap - [start,147] - NettyClientBootstrap has started
+15:55:51.283 [main] INFO  i.s.s.a.GlobalTransactionScanner - [initClient,227] - Resource Manager is initialized. applicationId[pmhub-project] txServiceGroup[default_tx_group]
+15:55:51.283 [main] INFO  i.s.s.a.GlobalTransactionScanner - [initClient,231] - Global Transaction Clients are initialized. 
+15:55:52.088 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-6806"]
+15:55:52.090 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+15:55:52.090 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.83]
+15:55:52.323 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+15:55:53.340 [main] INFO  c.a.d.p.DruidDataSource - [init,1009] - {dataSource-1} inited
+15:55:55.717 [main] INFO  c.a.c.s.f.SeataFeignBuilderBeanPostProcessor - [postProcessAfterInitialization,39] - change the retryer of the bean 'feignSentinelBuilder' to 'Retryer.NEVER_RETRY'
+15:55:55.947 [main] INFO  c.a.c.s.f.SeataFeignBuilderBeanPostProcessor - [postProcessAfterInitialization,39] - change the retryer of the bean 'feignSentinelBuilder' to 'Retryer.NEVER_RETRY'
+15:55:56.106 [main] INFO  i.s.s.a.GlobalTransactionScanner - [wrapIfNecessary,305] - Bean[com.laigeoffer.pmhub.project.service.impl.ProjectTaskServiceImpl$$EnhancerBySpringCGLIB$$3587bc24] with name [projectTaskServiceImpl] would use interceptor [io.seata.spring.annotation.GlobalTransactionalInterceptor]
+15:55:56.127 [main] INFO  c.a.c.s.f.SeataFeignBuilderBeanPostProcessor - [postProcessAfterInitialization,39] - change the retryer of the bean 'feignSentinelBuilder' to 'Retryer.NEVER_RETRY'
+15:55:56.493 [main] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.16.2
+15:55:57.014 [redisson-netty-2-14] INFO  o.r.c.p.MasterPubSubConnectionPool - [lambda$run$0,166] - 1 connections initialized for localhost/127.0.0.1:6379
+15:55:57.044 [redisson-netty-2-20] INFO  o.r.c.p.MasterConnectionPool - [lambda$run$0,166] - 24 connections initialized for localhost/127.0.0.1:6379
+15:55:57.804 [main] INFO  c.a.c.s.SentinelWebMvcConfigurer - [addInterceptors,52] - [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+15:56:01.266 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-6806"]
+15:56:01.286 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+15:56:01.287 [main] INFO  c.a.n.p.a.s.c.ClientAuthPluginManager - [init,56] - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+15:56:01.483 [main] INFO  c.a.c.n.r.NacosServiceRegistry - [register,76] - nacos registry, DEFAULT_GROUP pmhub-project 192.168.46.1:6806 register finished
+15:56:02.310 [main] INFO  c.l.p.p.PmHubProjectApplication - [logStarted,61] - Started PmHubProjectApplication in 17.635 seconds (JVM running for 19.596)
+15:56:05.734 [main] INFO  c.l.p.b.n.c.OAMessageConsumer - [run,158] - 企微通知消息RocketMQ通道已建立，TOPIC:pmhub_local
+15:56:05.738 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=pmhub-project.yml, group=DEFAULT_GROUP
+15:56:05.740 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=pmhub-project-dev.yml, group=DEFAULT_GROUP
+15:56:05.740 [main] INFO  c.a.c.n.r.NacosContextRefresher - [registerNacosListener,129] - [Nacos Config] Listening config: dataId=pmhub-project, group=DEFAULT_GROUP
+15:56:06.710 [RMI TCP Connection(17)-192.168.46.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+15:58:40.994 [timeoutChecker_1_1] INFO  i.s.c.r.n.NettyClientChannelManager - [acquireChannel,108] - will connect to 192.168.46.1:8091
+15:58:41.289 [timeoutChecker_2_1] INFO  i.s.c.r.n.NettyClientChannelManager - [acquireChannel,108] - will connect to 192.168.46.1:8091
+15:58:41.289 [timeoutChecker_2_1] INFO  i.s.c.r.n.RmNettyRemotingClient - [lambda$getPoolKeyFunction$0,276] - RM will register :jdbc:mysql://127.0.0.1:3306/pmhub-project
+15:58:41.295 [timeoutChecker_2_1] INFO  i.s.c.r.n.NettyPoolableFactory - [makeObject,56] - NettyPool create channel to transactionRole:RMROLE,address:192.168.46.1:8091,msg:< RegisterRMRequest{resourceIds='jdbc:mysql://127.0.0.1:3306/pmhub-project', applicationId='pmhub-project', transactionServiceGroup='default_tx_group'} >
+15:58:41.331 [timeoutChecker_1_1] INFO  i.s.c.r.n.NettyPoolableFactory - [makeObject,56] - NettyPool create channel to transactionRole:TMROLE,address:192.168.46.1:8091,msg:< RegisterTMRequest{applicationId='pmhub-project', transactionServiceGroup='default_tx_group'} >
+15:58:41.394 [timeoutChecker_2_1] INFO  i.s.c.r.n.RmNettyRemotingClient - [onRegisterMsgSuccess,177] - register RM success. client version:1.6.1, server version:2.0.0,channel:[id: 0x7223de6b, L:/192.168.46.1:40328 - R:/192.168.46.1:8091]
+15:58:41.394 [timeoutChecker_1_1] INFO  i.s.c.r.n.TmNettyRemotingClient - [onRegisterMsgSuccess,224] - register TM success. client version:1.6.1, server version:2.0.0,channel:[id: 0x7bba3167, L:/192.168.46.1:40329 - R:/192.168.46.1:8091]
+15:58:41.402 [timeoutChecker_1_1] INFO  i.s.c.r.n.NettyPoolableFactory - [makeObject,81] - register success, cost 68 ms, version:2.0.0,role:TMROLE,channel:[id: 0x7bba3167, L:/192.168.46.1:40329 - R:/192.168.46.1:8091]
+15:58:41.402 [timeoutChecker_2_1] INFO  i.s.c.r.n.NettyPoolableFactory - [makeObject,81] - register success, cost 98 ms, version:2.0.0,role:RMROLE,channel:[id: 0x7223de6b, L:/192.168.46.1:40328 - R:/192.168.46.1:8091]
+16:01:30.740 [rpcDispatch_RMROLE_1_1_24] INFO  i.s.c.r.p.c.RmUndoLogProcessor - [process,49] - rm handle undo log process:UndoLogDeleteRequest{resourceId='jdbc:mysql://127.0.0.1:3306/pmhub-project', saveDays=7, branchType=AT}
+22:14:19.270 [SpringContextShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,95] - De-registering from Nacos Server now...
+22:14:19.281 [SpringContextShutdownHook] INFO  c.a.c.n.r.NacosServiceRegistry - [deregister,115] - De-registration finished.
+22:14:19.455 [SpringContextShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2174] - {dataSource-1} closing ...
+22:14:19.471 [SpringContextShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2247] - {dataSource-1} closed
+22:14:19.475 [NettyClientSelector_TMROLE_1_1] INFO  i.s.c.r.n.AbstractNettyRemotingClient - [channelInactive,438] - channel inactive: [id: 0x7bba3167, L:/192.168.46.1:40329 ! R:/192.168.46.1:8091]
+22:14:19.476 [NettyClientSelector_TMROLE_1_1] INFO  i.s.c.r.n.NettyClientChannelManager - [releaseChannel,133] - return to pool, rm channel:[id: 0x7bba3167, L:/192.168.46.1:40329 ! R:/192.168.46.1:8091]
+22:14:19.476 [NettyClientSelector_TMROLE_1_1] INFO  i.s.c.r.n.NettyPoolableFactory - [validateObject,133] - channel valid false,channel:[id: 0x7bba3167, L:/192.168.46.1:40329 ! R:/192.168.46.1:8091]
+22:14:19.477 [NettyClientSelector_TMROLE_1_1] INFO  i.s.c.r.n.NettyPoolableFactory - [destroyObject,120] - will destroy channel:[id: 0x7bba3167, L:/192.168.46.1:40329 ! R:/192.168.46.1:8091]
+22:14:19.477 [NettyClientSelector_TMROLE_1_1] INFO  i.s.c.r.n.AbstractNettyRemotingClient - [close,488] - ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x7bba3167, L:/192.168.46.1:40329 ! R:/192.168.46.1:8091]) will closed
+22:14:19.477 [NettyClientSelector_TMROLE_1_1] INFO  i.s.c.r.n.AbstractNettyRemotingClient - [close,488] - ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x7bba3167, L:/192.168.46.1:40329 ! R:/192.168.46.1:8091]) will closed
